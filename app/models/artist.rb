@@ -4,4 +4,7 @@ class Artist < ActiveRecord::Base
   def artist_name
     self.artist.name
   end
+  def song_count
+    self.songs.size
+  end
 end
